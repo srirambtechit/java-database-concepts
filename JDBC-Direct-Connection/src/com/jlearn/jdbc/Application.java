@@ -18,7 +18,7 @@ public class Application {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection(url, user, password);
 
-			String sql = "INSERT INTO address (street, area, city, pincode) VALUES ( ?, ?, ?, ? )";
+			String sql = "INSERT INTO address (street, area, city, pincode) VALUES (?,?,?,?)";
 
 			st = con.prepareStatement(sql);
 			con.setAutoCommit(false);
