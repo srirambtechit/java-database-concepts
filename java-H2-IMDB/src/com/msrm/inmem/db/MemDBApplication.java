@@ -9,8 +9,8 @@ import java.sql.SQLException;
 public class MemDBApplication {
 
 	public static void main(String[] args) {
-		insert("Babu");
-		insert("Suresh");
+		insert("Shankar");
+		insert("Kannan");
 		
 		select();
 	}
